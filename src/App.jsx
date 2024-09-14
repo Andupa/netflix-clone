@@ -4,12 +4,13 @@ import movieRequestUrl from './requetUrls';
 import Row from './Row';
 import Banner from './Banner';
 import Nav from './Nav';
+import Header from './Header';
  
  /* trending/all/week?api_key=a5e326bc2246f6c1bd6cc25850d2177d&language=en-US */
 function App() {
-  return (
-   
+  return ( 
     <div className="App">
+    <Header/>
      <Nav/>
     <Banner/>
     <Row title="NETFLIX ORIGINALS" fetchUrl={movieRequestUrl.fetchNetflixOriginals}isLargeRow ="true"/>
